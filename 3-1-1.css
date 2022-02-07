@@ -1,0 +1,7 @@
+.count2 {
+    animation-iteration-count: 2;
+}
+
+.flex {
+    display: flex;
+}

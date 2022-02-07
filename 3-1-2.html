@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>3-1-2 ライブラリを使って手軽に動かそう！（Animate.css×jquery.inview）</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--==============Animate.cssのCDNを読み込み===============-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/3-1-2.css">
+</head>
+
+<body>
+<div class="wrapper">
+<!--基本設定＆アニメーションの回数設定-->
+<p>スクロールをすると動きます</p>
+<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓
+	
+<div class="flex">
+<div class="fadeInUpTrigger box">すぐ現れるボックス</div>
+<div class="fadeInUpTrigger box animate__infinite">アニメーション無限ループ</div>
+<div class="fadeInUpTrigger box count2">独自設定：アニメーション回数指定（2回）</div>
+<!--/flex--></div>
+	
+<!--アニメーションがスタートするタイミング設定-->	
+<div class="flex">
+<div class="fadeInUpTrigger box animate__delay-1s">アニメーションが1秒遅れでスタート</div>
+<div class="fadeInUpTrigger box animate__delay-2s">アニメーションが2秒遅れでスタート</div>
+<div class="fadeInUpTrigger box animate__delay-3s">アニメーションが3秒遅れでスタート</div>
+<div class="fadeInUpTrigger box animate__delay-4s">アニメーションが4秒遅れでスタート</div>
+<div class="fadeInUpTrigger box animate__delay-5s">アニメーションが5秒遅れでスタート</div>
+<div class="fadeInUpTrigger box delay-time">（CSS独自設定）アニメーションが0.5秒遅れでスタート</div>
+<!--/flex--></div>
+	
+<!--アニメーションの変化時間の設定-->
+<div class="flex">
+<div class="fadeInUpTrigger box animate__slow">アニメーションの変化のスピードが遅い</div>
+<div class="fadeInUpTrigger box animate__slower">アニメーションの変化のスピードがさらに遅い</div>
+<div class="fadeInUpTrigger box animate__fast">アニメーションの変化のスピードが速い</div>
+<div class="fadeInUpTrigger box animate__faster">アニメーションの変化のスピードがさらに速い</div>
+<div class="fadeInUpTrigger box change-time">（CSS独自設定）アニメーションの変化のスピードが4.5秒</div>
+<!--/flex--></div>
+    
+<!--スクロールをしたら1度だけアニメーションをする設定 -->
+<div class="fadeInUpTriggerOnce box">スクロールをしたら1度だけアニメーションをする</div>
+
+<!--違う動きを追加指定-->
+<div class="fadeInDownTrigger box">違う動きを追加指定</div>
+
+    
+<!--/wrapper--></div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="js/3-1-2.js"></script>
+</body>
+</html>
